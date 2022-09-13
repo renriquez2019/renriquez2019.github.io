@@ -1,0 +1,43 @@
+.contact {
+    background-color: #ffffff;
+    padding: 3rem 0;
+
+    .section-title {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+
+        .card {
+            background: #ffffff;
+            width: 260px;
+            margin: 20px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+            border-radius: 3px;
+
+            i {
+                font-size: 3.5rem;
+                color: $color-blue;
+                margin-bottom: 1rem;
+                transition: 0.4s;
+            }
+            i:hover {
+                transform: translateY(-20%);
+            }
+
+            & > * {
+                margin: 0.5rem;
+            }
+        }
+    }
+}

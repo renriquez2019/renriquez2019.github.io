@@ -1,0 +1,164 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    .noscroll {
+        overflow-x: hidden;
+    }
+    padding: 0;
+    line-height: 1.6;
+    background: $dark-grey;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.main-font {
+    font-family: $font-stack;
+    font-weight: 400;
+}
+
+// Utility
+.text-center {
+    text-align: center;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.mx-1 {
+    margin: 0 0.5rem;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.container {
+    max-width: $portfolio-width;
+    padding: 1.5rem 1.5rem;
+    margin: auto;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+// Text
+.text-blue {
+    color: $color-blue;
+}
+
+.text-white {
+    color: $text-color;
+}
+
+.text-grey {
+    color: grey;
+}
+
+.text-dark-grey {
+    color: $dark-grey
+}
+
+// Backgrounds
+.bg-blue {
+    background-color: $color-blue;
+}
+
+.bg-dark-grey {
+    background-color: $dark-grey
+}
+
+.bg-white {
+    background-color: white;
+}
+
+// Buttons
+%btn-shared {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    @extend %btn-shared;
+    &-blue {
+        color: #ffffff;
+        background-color: $color-blue;
+        border: 2px solid $color-blue;
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        color: #ffffff;
+        background-color: $dark-grey;
+    }
+
+    &-blue-outline {
+        @extend %btn-shared;
+        color: $color-blue;
+        background-color: transparent;
+        border: 2px solid $color-blue;
+    }
+
+    &-blue:hover {
+        transition: all 0.3s ease;
+        background: darken($color-blue, 10%);
+        border: 2px solid darken($color-blue, 10%);
+    }
+
+    &-blue-outline:hover {
+        color: white;
+        background-color: $color-blue;
+    }
+
+    &-small {
+        padding: 0.5rem 1rem;
+    }
+}
+
+.section-subtext {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.blue-link-underline {
+    color: $color-blue;
+    border-bottom: 1px solid $color-blue;
+}
+  
+.flex {
+    display: flex;
+}
+  
+  // Image colours
+.white-image {
+    filter: brightness(0) invert(1);
+}
+  
+  // Global media queries
+.hide-for-mobile {
+    @media screen and (max-width: 999px) {
+      display: none;
+    }
+}
+  
+.hide-for-desktop {
+    @media screen and (min-width: 1000px) {
+      display: none;
+    }
+}
