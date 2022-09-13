@@ -1,41 +1,189 @@
 <!DOCTYPE html>
-<html>
-    <head lang = "en">
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        <title>Ryan Enriquez</title>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ryan Enriquez</title>
 
-    </head>
-    <body>
-        <header class="showcase">
-			<div class="container">
-				<nav>
-					<h1 class="logo">My Website</h1>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+		
+	</head>
+	<body>
+		<!--Header-->
+		<header id="header">
+			<nav id="nav" data-aos="fade-in">
+				<div class="container nav-container">
+					<a href ="index.html" id ="logo">
+						<img src="img/bug.png" alt = "logo"/>
+					</a>
+					<ul class="hide-for-mobile nav-links flex">
+						<li>
+							<a href="#projects" class="link">
+								<i class="fas fa-code"></i> Projects
+							</a>
+						</li>
+						<li>
+							<a href="#skills" class="link">
+								<i class="fas fa-tools"></i> Skills
+							</a>
+						</li>
+						<li>
+							<a href="#education" class="link">
+								<i class="fas fa-user-graduate"></i> Education
+							</a>
+						</li>
+						<li>
+							<a href="#contact" class="link">
+								<i class="fas fa-user-envelope"></i> Contact
+							</a>
+						</li>
 					</ul>
-				</nav>
+				</div>
+			</nav>
 
-				<div class="showcase-content">
-					<div>
-						<h1>Make Your Marketing Real</h1>
-						<p class="my-1">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
-							eligendi tempore atque laborum. Quisquam nemo at non. Corrupti,
-							vitae dolore.
-						</p>
-						<a href="#" class="btn-primary">Learn More</a>
-						<a href="#" class="btn-secondary">Sign Up</a>
+			<!--Title-->
+			<div class="title">
+				<div data-aos="fade-up">
+					<h1>Ryan Enriquez</h1>
+					<p class="student" id="student">
+						I'm a fourth year UCF Computer Science student. Currently looking for a role that to grow and learn from
+						experienced team members while drawing on previous project experience.
+					</p>
+					<div class="title-btns">
+						<a href="#projects" class="btn-blue"><i class="fas fa-code"></i> Projects</a>
+						<a href="https://github.com/renriquez2019" class="btn-blue-outline mx-1" id="projects-btn"
+						target="_blank"><i class="fab fa-github"></i> Github</a>
 					</div>
-					<img
-						src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2016_21/1556456/capture.png"
-					/>
 				</div>
 			</div>
+			
+			
 		</header>
-    </body>
+
+		<!--Projects Section-->
+		<section id="projects" class="projects">
+			<div class="container">
+				<h2>My Projects</h2>
+
+				<div class="project-row" data-aos="fade-up">
+					<div class="project-left">
+						<img src="img/frozen-lake.png" alt="">
+					</div>
+					<div class="project-right">
+						<h3>Sample Project #1</h3>
+						<ul class="tech-stack-list">
+							<p class="text-grey"><b>Made with: </b></p>
+							<li><span class="iconify" data-icon="logos:aws" data-inline="false"></span></li>
+							<li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span></li>
+							<li><span class="iconify" data-icon="logos:react" data-inline="false"></span></span></li>
+							<li><span class="iconify" data-icon="logos:bootstrap" data-inline="false"></span></li>
+							<li><span class="iconify" data-icon="logos:nodejs" data-inline="false"></span></li>
+							<li><span class="iconify" data-icon="logos:express" data-inline="false"></span></li>
+						</ul>
+						<p>Bug Tracker really cool project</p>
+						<div class="project-links">
+							<a href="https://www.youtube.com/watch?v=6n3pFFPSlW4&ab_channel=angie8051" class="btn-blue btn-small hover-bg-light" target="_blank"> <i class="fab fa-youtube"></i> Demo</a>
+							<a href="https://github.com/renriquez2019/bug-tracker" class="btn-blue-outline btn-small mx-1" target="_blank"> <i class="fab fa-github"></i
+							> Code</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-row" data-aos="fade-up">
+					<div class="project-left">
+						<img src="img/frozen-lake.png" alt="">
+					</div>
+					<div class="project-right">
+						<h3>Sample Project #2</h3>
+						<ul class="tech-stack-list">
+							<p class="text-grey"><b>Made with: </b></p>
+							<li><span class="iconify" data-icon="logos:aws" data-inline="false"></span></li>
+							<li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span></li>
+							<li><span class="iconify" data-icon="logos:react" data-inline="false"></span></span></li>
+							<li><span class="iconify" data-icon="logos:bootstrap" data-inline="false"></span></li>
+							<li><span class="iconify" data-icon="logos:nodejs" data-inline="false"></span></li>
+							<li><span class="iconify" data-icon="logos:express" data-inline="false"></span></li>
+						</ul>
+						<p>Bug Tracker really cool project</p>
+						<div class="project-links">
+							<a href="https://www.youtube.com/watch?v=6n3pFFPSlW4&ab_channel=angie8051" class="btn-blue btn-small hover-bg-light" target="_blank"> <i class="fab fa-youtube"></i> Demo</a>
+							<a href="https://github.com/renriquez2019/bug-tracker" class="btn-blue-outline btn-small mx-1" target="_blank"> <i class="fab fa-github"></i
+							> Code</a>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+		<!--Skills-->
+		<section id="skills" class="skills">
+			<div class="container" data-aos="fade-in">
+				<h2>My Skills</h2>
+				<ul class="skills-icons">
+					<li><span class="iconify" data-icon="logos:react" data-inline="false" data-width="90px" data-height="90px"></span><span>React</span></li>
+					<li><span class="iconify" data-icon="logos:vue" data-inline="false" data-width="90px" data-height="90px"></span><span class="text-center">Vue</span></li>       
+					<li><span class="iconify" data-icon="logos:nodejs-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Node.js</span></li>
+					<li><span class="iconify" data-icon="logos:laravel" data-inline="false" data-width="90px" data-height="90px"></span><span class="text-center">Laravel</span></li>       
+					<li><span class="iconify" data-icon="logos:javascript" data-inline="false" data-width="90px" data-height="90px"></span><span>JavaScript</span></li>
+					<li><span class="iconify" data-icon="logos:python" data-inline="false" data-width="90px" data-height="90px"></span><span>Python</span></li>
+					<li><span class="iconify" data-icon="logos:c-sharp" data-inline="false" data-width="90px" data-height="90px"></span><span>C#</span></li>
+					<li><span class="iconify" data-icon="logos:java" data-inline="false" data-width="90px" data-height="90px"></span><span>Java</span></li>
+					<li><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="90px" data-height="90px"></span><span>HTML</span></li>
+					<li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="90px" data-height="90px"></span><span>CSS</span></li>
+					<li><span class="iconify" data-icon="vscode-icons:file-type-scss2" data-inline="false" data-width="90px" data-height="90px"></span><span>SCSS</span></li>
+					<li><span class="iconify" data-icon="logos:git-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Git</span></li>
+					<li><span class="iconify" data-icon="logos:bootstrap" data-inline="false" data-width="90px" data-height="90px"></span><span>Bootstrap</span></li>
+					<li><span class="iconify" data-icon="logos:mysql" data-inline="false" data-width="90px" data-height="90px"></span><span>MySQL</span></li>
+					<li><span class="iconify" data-icon="flat-color-icons:linux" data-inline="false" data-width="90px" data-height="90px"></span><span>Linux</span></li>          
+					<li><span class="iconify" data-icon="logos:shopify" data-inline="false" data-width="90px" data-height="90px"></span><span>Shopify</span></li>          
+					<li><span class="iconify aws-logo" data-icon="logos:aws" data-inline="false" data-width="90px" data-height="90px"></span><span class="text-center">Amazon Web <br> Services</span></li>  
+				  </ul>
+			</div>
+
+		</section>
+
+		<!--Education-->
+		<section id="education" class="education">
+			<div class="container">
+				<h2>My Education</h2>
+
+				<div class="education-card" data-aos="zoom-in">
+					<div class="education-card-column">
+						<div class="card-column-image">
+							<img src="/img/qut-Logo.png" alt="">
+					  	</div>
+		
+					  	<div class="card-column-large">
+							<h4 class="education-year">2022</h4>
+							<h4>Queensland University of Technology - Bachelor of Information Technology</h4>
+							<p>GPA 6.2/7</p>
+							<ul>
+								<li>Major in computer science</li>
+								<li>Minor in networks & security</li>
+								<li>Minor in mobile applications</li>
+								<li>Science & Engineering Dean's List - 2019 & 2021</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Contact-->
+		<section>
+
+		</section>
+
+		<!--Footer-->
+		<section>
+			
+		</section>
+	</body>
 </html>
