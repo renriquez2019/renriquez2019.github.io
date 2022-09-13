@@ -1,23 +1,32 @@
 header {
-  background: #181a1b;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ucf-lib.png");
   background-size: cover;
+  background-position: 25% 75%;
   min-height: 50vh;
   position: relative;
 }
 header nav {
+  filter: brightness(100%);
   width: 100%;
+  background-color: #181a1b;
 }
 header nav .nav-container {
   position: relative;
   display: flex;
   justify-content: space-between;
+  max-height: 8vh;
 }
 header nav .nav-container #logo {
-  margin: auto 0;
   z-index: 10;
+  display: flex;
+  align-items: center;
 }
-header nav .nav-container #logo img {
-  width: 80px;
+header nav .nav-container #logo h1 {
+  text-align: center;
+  color: #3b82f6;
+  font-family: "Alfa Slab One", "Poppins";
+  font-size: x-large;
+  font-weight: 100;
 }
 header nav .nav-container .nav-links {
   z-index: 1000;
@@ -99,7 +108,8 @@ header .mobile-menu .container .mobile-menu-links ul .link:hover::after {
 .title p {
   color: #dcdcdc;
   line-height: 1;
-  font-size: large;
+  font-size: larger;
+  font-weight: 400;
   text-align: center;
   margin: 0 auto;
   padding: 0.5rem;
@@ -286,6 +296,35 @@ a {
 
 .white-image {
   filter: brightness(0) invert(1);
+}
+
+#btn-backtotop {
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 15%;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+#btn-backtotop.show {
+  opacity: 1;
+  visibility: visible;
+}
+#btn-backtotop i {
+  font-size: 2rem;
+  color: white;
+}
+
+#btn-backtotop:hover {
+  color: #3b82f6;
+  border: 3px solid #3b82f6;
 }
 
 @media screen and (max-width: 999px) {
@@ -507,6 +546,126 @@ a {
 }
 .contact .card-container .card > * {
   margin: 0.5rem;
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 3px;
+  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  padding: 2rem;
+}
+.contact form h2 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.contact form .form-group input {
+  margin: 0.75rem 0;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #000000;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+.contact form .form-group input:focus {
+  outline: none;
+}
+.contact form .form-group textarea {
+  width: 100%;
+  border-radius: 3px;
+  margin: 0.75 0;
+  border: 1px solid black;
+  padding: 0.75rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+.contact form .form-group textarea:focus {
+  outline: none;
+}
+.contact form button {
+  width: 100%;
+  margin: 0.75rem 0;
+  padding: 0.75rem 0;
+  border-radius: 3px;
+  border: none;
+  background: #3b82f6;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+}
+.contact form button:hover {
+  background: #0b63f3;
+}
+.contact form #status {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 3px;
+  color: #00b700;
+}
+.contact form #status.success {
+  color: #00b700;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.footer {
+  background: #181a1b;
+  padding: 1.5rem 0;
+  color: white;
+}
+.footer .foot-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .foot-flex #logo-footer {
+  width: 100px;
+  margin-top: 0 auto;
+}
+.footer .foot-flex .footer-icon-links a {
+  margin-left: 2rem;
+  transition: 0.3s;
+}
+.footer .foot-flex .footer-icon-links a:hover {
+  color: #3b82f6;
+}
+.footer .foot-flex .footer-icon-links a i {
+  transition: 0.3s;
+}
+.footer .foot-flex .footer-icon-links a i:hover {
+  transform: translateY(-20%);
+}
+
+@media screen and (max-width: 500px) {
+  .footer .foot-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .foot-flex .top-scroll-button {
+    margin-top: 2rem;
+  }
+  .footer .foot-flex .footer-icon-links {
+    margin-top: 2rem;
+  }
+  .footer .foot-flex .footer-icon-links a {
+    margin: 0.1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

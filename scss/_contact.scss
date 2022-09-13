@@ -40,4 +40,91 @@
             }
         }
     }
+
+    form {
+        h2 {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 3px;
+        box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+        padding: 2rem;
+
+        .form-group {
+            input {
+                margin: 0.75rem 0;
+                width: 100%;
+                border-radius: 3px;
+                border: 1px solid #000000;
+                padding: 0.75rem;
+                font-size: 1rem;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            textarea {
+                width: 100%;
+                border-radius: 3px;
+                margin: 0.75 0;
+                border: 1px solid black;
+                padding: 0.75rem;
+                padding-top: 0.5rem;
+                font-size: 1rem;
+                resize: vertical;
+            }
+
+            textarea:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            width: 100%;
+            margin: 0.75rem 0;
+            padding: 0.75rem 0;
+            border-radius: 3px;
+            border: none;
+            background: $color-blue;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: darken($color-blue, 10%);
+        }
+
+
+        #status {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 3px;
+            color: #00b700;
+        }
+        #status.success {
+            color: #00b700;
+            animation: status 4s ease forwards;
+        }
+        @keyframes status {
+            0% {
+                opacity: 1;
+                pointer-events: all;
+            }
+            90% {
+                opacity: 1;
+                pointer-events: all;
+            }
+            100% {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    }
 }

@@ -149,6 +149,38 @@ a {
 .white-image {
     filter: brightness(0) invert(1);
 }
+
+#btn-backtotop {
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 15%;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    i {
+        font-size: 2rem;
+        color: white;
+    }
+}
+
+#btn-backtotop:hover {
+    color: $color-blue;
+    border: 3px solid $color-blue;
+}
+
   
   // Global media queries
 .hide-for-mobile {

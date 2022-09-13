@@ -40,7 +40,7 @@
 			<nav id="nav" data-aos="fade-in">
 				<div class="container nav-container">
 					<a href ="index.html" id ="logo">
-						<img src="img/bug.png" alt = "logo"/>
+						<h1>Ryan Enriquez</h1>
 					</a>
 					<ul class="hide-for-mobile nav-links flex">
 						<li>
@@ -70,9 +70,10 @@
 			<!--Title-->
 			<div class="title">
 				<div data-aos="fade-up">
-					<h1>Ryan Enriquez</h1>
+					<h1>About me</h1>
 					<p class="student" id="student">
-						I'm a fourth year UCF Computer Science student.
+						I am currently a final year student at UCF with an interest in Computer Science. My current prospects include software design and development, machine learning,
+						and statistics.
 					</p>
 					<div class="title-btns">
 						<a href="#projects" class="btn-blue"><i class="fas fa-code"></i> Projects</a>
@@ -224,7 +225,7 @@
 					</div>
 
 					<div class="form-group">
-						<input type="text" id="name" name="name" placeholder="Name" required>
+						<input type="email" id="email" name="email" placeholder="Enter your email" required>
 					</div>
 
 					<div class="form-group">
@@ -233,20 +234,11 @@
 
 					<button type="submit" class="btn-email">
 						<span class="default">Send</span>
-						<span class="success">
-							<svg viewBox="0 0 16 16">
-								<polyline points="3.75 9 7 12 13 5"></polyline>
-							</svg>Sent
-						</span>
-						<!--<svg class="trails" viewBox="0 0 33 64">
-							<path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60"></path>
-							<path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
-						</svg>>-->
 					</button>
+					<div id="status"></div>
 				</form>
 			</div>
 		</section>
-
 	
 		<!--Footer-->
 		<footer class="footer">
@@ -258,10 +250,23 @@
 						<a href="https://github.com/renriquez2019" target="_blank">
 							<i class="fab fa-github fa-2x"></i>
 						</a>
+						<a href="mailto:ryandenriquez@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
 					</div>
 				</div>
 			</div>
 		</footer>
+
+		<!--Making a button that goes up to top-->
+		<a id="btn-backtotop" class="btn-blue">
+			<i class="fa fa-chevron-up"></i>
+		</a>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+		<script defer src="app.js"></script>
 
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>

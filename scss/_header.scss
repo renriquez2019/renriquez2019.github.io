@@ -1,22 +1,33 @@
 header {
-    background: $dark-grey;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url('../img/ucf-lib.png');
     background-size: cover;
+    background-position: 25% 75%;
     min-height: 50vh;
     position: relative;
 
     nav {
+        filter: brightness(100%);
         width: 100%;
+        background-color: $dark-grey;
         .nav-container {
             position: relative;
             display: flex;
             justify-content: space-between;
+            max-height: 8vh;
             
             #logo {
-                margin: auto 0;
-                z-index: 10;
                 
-                img {
-                    width: 80px;
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                
+                h1 {
+                    text-align: center;
+                    color: $color-blue;
+                    font-family: $font-stack;
+                    font-size: x-large;
+                    font-weight: 100;
                 }
             }
 
@@ -32,7 +43,7 @@ header {
                 a {
                     text-decoration: none;
                     letter-spacing: 2px;
-                    color: $text-color;
+                    color: $text-color
                 }
                 .link::after {
                     content: "";
@@ -110,7 +121,8 @@ header {
     p {
         color: $text-light;
         line-height: 1;
-        font-size: large;
+        font-size: larger;
+        font-weight: 400;
         text-align: center;
         
         margin: 0 auto;
