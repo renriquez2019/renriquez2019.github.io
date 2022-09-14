@@ -114,13 +114,13 @@ header .mobile-menu .container .mobile-menu-links ul .link:hover::after {
   margin: 0 auto;
   padding: 0.5rem;
 }
-.title p .blue-link-undlerine {
-  color: #3783ff;
-}
 .title .title-btns {
   white-space: nowrap;
   text-align: center;
   margin-top: 1rem;
+}
+.title .title-btns .blue-link-undlerine {
+  color: #3783ff;
 }
 
 @media screen and (max-width: 999px) {
@@ -231,19 +231,7 @@ a {
   color: #181a1b;
 }
 
-.bg-blue {
-  background-color: #3b82f6;
-}
-
-.bg-dark-grey {
-  background-color: #181a1b;
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.btn-blue-outline, .btn-dark, .btn {
+.btn-blue-outline, .btn-dark, .btn-blue, .btn {
   display: inline-block;
   padding: 0.8rem 1.5rem;
   transition: all 0.3s;
@@ -343,9 +331,10 @@ a {
   background-color: #ffffff;
   padding: 3rem 0;
 }
-.projects h2 {
+.projects h1 {
   text-align: center;
   margin-bottom: 3rem;
+  font-size: 2.5rem;
 }
 .projects .project-row {
   display: flex;
@@ -408,6 +397,7 @@ a {
 .skills h2 {
   text-align: center;
   margin-bottom: 3rem;
+  font-size: 2.5rem;
 }
 .skills .container {
   padding: 6rem 0;
@@ -464,6 +454,7 @@ a {
   text-align: center;
   color: #000000;
   margin-bottom: 3rem;
+  font-size: 2.5rem;
 }
 .education .container .education-card {
   display: flex;
@@ -473,37 +464,37 @@ a {
   padding: 40px;
   border-radius: 3px;
 }
-.education .container > *:last-child {
+.education .container .education-card > *:last-child {
   margin-top: 40px;
 }
 @media (max-width: 500px) {
-  .education .container {
+  .education .container .education-card {
     padding: 20px;
   }
 }
-.education .container .education-card-column {
+.education .container .education-card .education-card-column {
   display: flex;
 }
-.education .container .education-card-column .card-column-image {
+.education .container .education-card .education-card-column .card-column-image {
   flex: 0 0 20%;
+  background-image: url("../img/ucf-logo.png");
+  background-position: center;
+  background-size: contain;
 }
-.education .container .education-card-column .card-column-image img {
-  width: 100%;
-}
-.education .container .education-card-column .card-column-large {
+.education .container .education-card .education-card-column .card-column-large {
   flex: 0 0 80%;
   padding-left: 1.5rem;
 }
-.education .container .education-card-column .card-column-large > * {
+.education .container .education-card .education-card-column .card-column-large > * {
   margin: 0.25rem 0;
 }
-.education .container .education-card-column .card-column-large h4 {
+.education .container .education-card .education-card-column .card-column-large h4 {
   font-weight: normal;
 }
-.education .container .education-card-column .card-column-large ul {
+.education .container .education-card .education-card-column .card-column-large ul {
   padding-left: 1.5rem;
 }
-.education .container .education-card-column .card-column-large hr {
+.education .container .education-card .education-card-column .card-column-large hr {
   border: 0;
   border-top: 1px solid #eee;
   margin-top: 40px;
@@ -513,9 +504,10 @@ a {
   background-color: #ffffff;
   padding: 3rem 0;
 }
-.contact .section-title {
+.contact h2 {
   margin-bottom: 2rem;
   text-align: center;
+  font-size: 2.5rem;
 }
 .contact .card-container {
   display: flex;
@@ -594,6 +586,7 @@ a {
   font-weight: bold;
   letter-spacing: 1.5px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .contact form button:hover {
   background: #0b63f3;
@@ -628,10 +621,18 @@ a {
   background: #181a1b;
   padding: 1.5rem 0;
   color: white;
+  max-height: 10vh;
 }
 .footer .foot-flex {
   display: flex;
   justify-content: space-between;
+}
+.footer .foot-flex h1 {
+  text-align: center;
+  color: #3b82f6;
+  font-family: "Alfa Slab One", "Poppins";
+  font-size: x-large;
+  font-weight: 100;
 }
 .footer .foot-flex #logo-footer {
   width: 100px;

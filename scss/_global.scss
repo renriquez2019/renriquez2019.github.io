@@ -70,18 +70,7 @@ a {
     color: $dark-grey
 }
 
-// Backgrounds
-.bg-blue {
-    background-color: $color-blue;
-}
 
-.bg-dark-grey {
-    background-color: $dark-grey
-}
-
-.bg-white {
-    background-color: white;
-}
 
 // Buttons
 %btn-shared {
@@ -96,6 +85,7 @@ a {
 .btn {
     @extend %btn-shared;
     &-blue {
+        @extend %btn-shared;
         color: #ffffff;
         background-color: $color-blue;
         border: 2px solid $color-blue;

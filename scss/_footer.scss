@@ -2,10 +2,19 @@
     background: $dark-grey;
     padding: 1.5rem 0;
     color: white;
+    max-height: 10vh;
 
     .foot-flex {
         display: flex;
         justify-content: space-between;
+
+        h1 {
+            text-align: center;
+            color: $color-blue;
+            font-family: $font-stack;
+            font-size: x-large;
+            font-weight: 100;
+        }
 
         #logo-footer {
             width: 100px;
