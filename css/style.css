@@ -396,13 +396,26 @@ a {
 }
 .skills h2 {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   font-size: 2.5rem;
 }
 .skills .container {
-  padding: 6rem 0;
+  padding: 1rem 0;
 }
-.skills .skills-icons {
+.skills .skills-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0rem 1rem;
+}
+.skills .skills-categories h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: "Alfa Slab One", "Poppins";
+  text-align: center;
+}
+.skills .skills-categories .skills-icons {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -410,16 +423,16 @@ a {
   max-width: 1100px;
   margin: 0 auto;
 }
-.skills .skills-icons svg {
+.skills .skills-categories .skills-icons svg {
   margin: 0.5rem;
   width: 90px;
 }
 @media (max-width: 420px) {
-  .skills .skills-icons svg {
+  .skills .skills-categories .skills-icons svg {
     width: 70px;
   }
 }
-.skills .skills-icons li {
+.skills .skills-categories .skills-icons li {
   transition: 0.3s;
   display: flex;
   flex-direction: column;
@@ -430,16 +443,16 @@ a {
   margin: 1rem;
 }
 @media (max-width: 420px) {
-  .skills .skills-icons li {
+  .skills .skills-categories .skills-icons li {
     margin: 1rem 0.75rem;
   }
 }
-.skills .skills-icons li .aws-logo {
+.skills .skills-categories .skills-icons li .aws-logo {
   background: white;
   padding: 10px;
   border-radius: 3px;
 }
-.skills .skills-icons li:hover {
+.skills .skills-categories .skills-icons li:hover {
   transform: scale(1.3);
 }
 
